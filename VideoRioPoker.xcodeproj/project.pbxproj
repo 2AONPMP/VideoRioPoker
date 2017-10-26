@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B0B29931FA23EE100559C23 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B29921FA23EE000559C23 /* logo.png */; };
+		9B0B29951FA277BB00559C23 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0B29941FA277BB00559C23 /* UserDefaultsManager.swift */; };
 		9C0C3BCD1FA0FEF800D359D9 /* Enchanting Celebrations.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3BC91FA0FEF700D359D9 /* Enchanting Celebrations.ttf */; };
 		9C0C3BCE1FA0FEF800D359D9 /* Manus_Smooth_TRIAL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3BCA1FA0FEF700D359D9 /* Manus_Smooth_TRIAL.ttf */; };
 		9C0C3BCF1FA0FEF800D359D9 /* Roman SD.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3BCB1FA0FEF800D359D9 /* Roman SD.ttf */; };
@@ -73,7 +75,6 @@
 		9C0C3C4B1FA102B600D359D9 /* blur_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3C461FA102B600D359D9 /* blur_5.png */; };
 		9C0C3C4C1FA102B600D359D9 /* blur_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3C471FA102B600D359D9 /* blur_4.png */; };
 		9C0C3C4D1FA102B600D359D9 /* blur_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3C481FA102B600D359D9 /* blur_1.png */; };
-		9C0C3C4F1FA16D8700D359D9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C0C3C4E1FA16D8700D359D9 /* logo.png */; };
 		9C2447691FA0F1800065E7F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2447681FA0F1800065E7F9 /* AppDelegate.swift */; };
 		9C24476B1FA0F1800065E7F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C24476A1FA0F1800065E7F9 /* ViewController.swift */; };
 		9C24476E1FA0F1800065E7F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C24476C1FA0F1800065E7F9 /* Main.storyboard */; };
@@ -82,6 +83,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B0B29921FA23EE000559C23 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = VideoRioPoker/Images/misc/logo.png; sourceTree = SOURCE_ROOT; };
+		9B0B29941FA277BB00559C23 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		9C0C3BC91FA0FEF700D359D9 /* Enchanting Celebrations.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Enchanting Celebrations.ttf"; path = "VideoRioPoker/Fonts/Enchanting Celebrations.ttf"; sourceTree = SOURCE_ROOT; };
 		9C0C3BCA1FA0FEF700D359D9 /* Manus_Smooth_TRIAL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Manus_Smooth_TRIAL.ttf; path = VideoRioPoker/Fonts/Manus_Smooth_TRIAL.ttf; sourceTree = SOURCE_ROOT; };
 		9C0C3BCB1FA0FEF800D359D9 /* Roman SD.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roman SD.ttf"; path = "VideoRioPoker/Fonts/Roman SD.ttf"; sourceTree = SOURCE_ROOT; };
@@ -148,7 +151,6 @@
 		9C0C3C461FA102B600D359D9 /* blur_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_5.png; path = VideoRioPoker/Images/blurs/blur_5.png; sourceTree = SOURCE_ROOT; };
 		9C0C3C471FA102B600D359D9 /* blur_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_4.png; path = VideoRioPoker/Images/blurs/blur_4.png; sourceTree = SOURCE_ROOT; };
 		9C0C3C481FA102B600D359D9 /* blur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_1.png; path = VideoRioPoker/Images/blurs/blur_1.png; sourceTree = SOURCE_ROOT; };
-		9C0C3C4E1FA16D8700D359D9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = VideoRioPoker/Images/misc/logo.png; sourceTree = SOURCE_ROOT; };
 		9C2447651FA0F1800065E7F9 /* VideoRioPoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRioPoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C2447681FA0F1800065E7F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C24476A1FA0F1800065E7F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -274,7 +276,7 @@
 		9C0C3BC71FA0FE5100D359D9 /* misc */ = {
 			isa = PBXGroup;
 			children = (
-				9C0C3C4E1FA16D8700D359D9 /* logo.png */,
+				9B0B29921FA23EE000559C23 /* logo.png */,
 				9C0C3BD41FA1027400D359D9 /* bg.png */,
 				9C0C3BD31FA1027400D359D9 /* buttons.png */,
 				9C0C3BD51FA1027400D359D9 /* delete.png */,
@@ -302,6 +304,7 @@
 		9C2447671FA0F1800065E7F9 /* VideoRioPoker */ = {
 			isa = PBXGroup;
 			children = (
+				9B0B29941FA277BB00559C23 /* UserDefaultsManager.swift */,
 				9C0C3BD01FA1020200D359D9 /* PokerHands.swift */,
 				9C0C3BC31FA0FDCC00D359D9 /* Fonts */,
 				9C0C3BC21FA0FD9B00D359D9 /* Images */,
@@ -421,7 +424,7 @@
 				9C0C3C181FA1029F00D359D9 /* 2c.png in Resources */,
 				9C0C3C291FA1029F00D359D9 /* 13s.png in Resources */,
 				9C0C3C0F1FA1029F00D359D9 /* 12c.png in Resources */,
-				9C0C3C4F1FA16D8700D359D9 /* logo.png in Resources */,
+				9B0B29931FA23EE100559C23 /* logo.png in Resources */,
 				9C0C3C2B1FA1029F00D359D9 /* 3h.png in Resources */,
 				9C0C3C1C1FA1029F00D359D9 /* 10d.png in Resources */,
 				9C0C3C3F1FA1029F00D359D9 /* 11h.png in Resources */,
@@ -455,6 +458,7 @@
 			files = (
 				9C24476B1FA0F1800065E7F9 /* ViewController.swift in Sources */,
 				9C0C3BD11FA1020300D359D9 /* PokerHands.swift in Sources */,
+				9B0B29951FA277BB00559C23 /* UserDefaultsManager.swift in Sources */,
 				9C2447691FA0F1800065E7F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
