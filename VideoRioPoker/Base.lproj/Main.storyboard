@@ -1,24 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-CondensedExtraBold</string>
+        </array>
+        <array key="Manus_Smooth_TRIAL.ttf">
+            <string>ManusSmoothTRIAL</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoRioPoker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="VyW-3Z-EUA">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O72-gF-M4E" userLabel="slot_1">
+                                <rect key="frame" x="15" y="106" width="121" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="9rZ-6N-cdl">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1O-Nh-G6i">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BnZ-OD-iw7"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUu-zH-sep">
+                                        <rect key="frame" x="3" y="173" width="115" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lC6-NQ-31Q" userLabel="slot_2">
+                                <rect key="frame" x="144" y="106" width="121" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="nbD-JH-MXu">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBW-76-wD1">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h2-P8-kuD"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iad-yk-z73">
+                                        <rect key="frame" x="3" y="173" width="115" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y3I-vy-gdv" userLabel="slot_4">
+                                <rect key="frame" x="402" y="106" width="121" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="PvD-yh-czW">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3V7-mN-hrK">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GrC-9p-Syw"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTd-Sx-BHV">
+                                        <rect key="frame" x="3" y="173" width="115" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aSG-2K-bgz" userLabel="slot_5">
+                                <rect key="frame" x="531" y="106" width="121" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Um-8k-q2D">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii5-k3-tSI">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0s-sM-4jA"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QxW-ww-fvD">
+                                        <rect key="frame" x="3" y="173" width="115" height="17"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-he-eLj">
+                                <rect key="frame" x="15" y="309" width="121" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                <state key="normal" title="RECOMMENCER" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="25" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoZ-ke-f8a">
+                                <rect key="frame" x="144" y="309" width="121" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                <state key="normal" title="MISER 25" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V43-Ai-S8w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1000" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IhY-3v-WB2">
+                                <rect key="frame" x="402" y="309" width="121" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                <state key="normal" title="MISER tout" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gR-Gv-sPP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu5-qN-QVo">
+                                <rect key="frame" x="531" y="309" width="121" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                <state key="normal" title="DISTRIBUER" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fQs-AZ-Iz7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CRÉDITS: 2000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lK-Ip-QJn">
+                                <rect key="frame" x="529" y="13" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MISE: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJq-Uv-VXn">
+                                <rect key="frame" x="529" y="42" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BONNE CHANCE..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mG6-0K-ovP">
+                                <rect key="frame" x="528" y="71" width="121" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Zuy-K4-vIx">
+                                <rect key="frame" x="15" y="12" width="303" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nkP-2w-tRR" userLabel="slot_3">
+                                <rect key="frame" x="273" y="106" width="121" height="195"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="NWJ-S3-Rlo">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                    </imageView>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deY-tD-80o">
+                                        <rect key="frame" x="3" y="3" width="115" height="165"/>
+                                        <connections>
+                                            <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTL-js-hyQ"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="GARDER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwM-Bh-AbN">
+                                        <rect key="frame" x="3" y="173" width="115" height="17"/>
+                                        <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nkP-2w-tRR" secondAttribute="height" multiplier="121:195" id="7CC-U7-uvW"/>
+                                    <constraint firstItem="bwM-Bh-AbN" firstAttribute="top" secondItem="NWJ-S3-Rlo" secondAttribute="bottom" constant="5" id="7Q8-PL-v8f"/>
+                                    <constraint firstItem="NWJ-S3-Rlo" firstAttribute="leading" secondItem="nkP-2w-tRR" secondAttribute="leading" constant="3" id="8Sl-bR-eJL"/>
+                                    <constraint firstAttribute="trailing" secondItem="bwM-Bh-AbN" secondAttribute="trailing" constant="3" id="Bsy-4R-LDE"/>
+                                    <constraint firstItem="bwM-Bh-AbN" firstAttribute="top" secondItem="NWJ-S3-Rlo" secondAttribute="bottom" constant="5" id="OdY-ek-NQn"/>
+                                    <constraint firstItem="bwM-Bh-AbN" firstAttribute="top" secondItem="deY-tD-80o" secondAttribute="bottom" constant="5" id="QSE-97-n2w"/>
+                                    <constraint firstItem="bwM-Bh-AbN" firstAttribute="leading" secondItem="nkP-2w-tRR" secondAttribute="leading" constant="3" id="aku-TP-80A"/>
+                                    <constraint firstItem="NWJ-S3-Rlo" firstAttribute="top" secondItem="nkP-2w-tRR" secondAttribute="top" constant="3" id="etV-Se-yYh"/>
+                                    <constraint firstAttribute="trailing" secondItem="deY-tD-80o" secondAttribute="trailing" constant="3" id="ncI-pn-HF9"/>
+                                    <constraint firstItem="deY-tD-80o" firstAttribute="top" secondItem="nkP-2w-tRR" secondAttribute="top" constant="3" id="sWO-dt-hLU"/>
+                                    <constraint firstAttribute="bottom" secondItem="bwM-Bh-AbN" secondAttribute="bottom" constant="5" id="tZ3-d1-e2q"/>
+                                    <constraint firstAttribute="trailing" secondItem="NWJ-S3-Rlo" secondAttribute="trailing" constant="3" id="xT0-Ro-RIb"/>
+                                    <constraint firstItem="deY-tD-80o" firstAttribute="leading" secondItem="nkP-2w-tRR" secondAttribute="leading" constant="3" id="zhN-l8-oiG"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uV0-7t-vkC">
+                                <rect key="frame" x="273" y="309" width="121" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ManusSmoothTRIAL" family="Manus Smooth_TRIAL" pointSize="19"/>
+                                <state key="normal" title="MISER 100" backgroundImage="buttons.png">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="betButtons:" destination="BYZ-38-t0r" eventType="touchUpInside" id="afF-H2-N2E"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="nkP-2w-tRR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.1814" id="MSn-Vh-JD2"/>
+                            <constraint firstItem="nkP-2w-tRR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tsK-51-0sV"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="betLabel" destination="CJq-Uv-VXn" id="WD7-rt-0M5"/>
+                        <outlet property="bg_1" destination="O72-gF-M4E" id="tbW-if-PYt"/>
+                        <outlet property="bg_2" destination="lC6-NQ-31Q" id="n5E-qJ-9qG"/>
+                        <outlet property="bg_3" destination="nkP-2w-tRR" id="gL6-7j-Fht"/>
+                        <outlet property="bg_4" destination="y3I-vy-gdv" id="yis-gH-6mg"/>
+                        <outlet property="bg_5" destination="aSG-2K-bgz" id="NaP-NK-NJc"/>
+                        <outlet property="creditsLabel" destination="9lK-Ip-QJn" id="qMU-0Z-yOW"/>
+                        <outlet property="dealButton" destination="iu5-qN-QVo" id="jzn-jK-GEt"/>
+                        <outlet property="keep_1" destination="uUu-zH-sep" id="RLa-ae-dFJ"/>
+                        <outlet property="keep_2" destination="iad-yk-z73" id="59i-81-tU6"/>
+                        <outlet property="keep_3" destination="bwM-Bh-AbN" id="wIm-L4-BwH"/>
+                        <outlet property="keep_4" destination="QTd-Sx-BHV" id="fmF-8r-wtN"/>
+                        <outlet property="keep_5" destination="QxW-ww-fvD" id="5pA-Uz-wEa"/>
+                        <outlet property="slot_1" destination="9rZ-6N-cdl" id="1C0-rf-bM9"/>
+                        <outlet property="slot_2" destination="nbD-JH-MXu" id="Xoh-4r-m4g"/>
+                        <outlet property="slot_3" destination="NWJ-S3-Rlo" id="rTp-g6-V2r"/>
+                        <outlet property="slot_4" destination="PvD-yh-czW" id="xw1-23-8nl"/>
+                        <outlet property="slot_5" destination="2Um-8k-q2D" id="VS5-P3-0JI"/>
+                        <outlet property="tempLabel" destination="mG6-0K-ovP" id="5eA-2U-3GT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.5832083958021" y="117.59999999999999"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back.png" width="309" height="429"/>
+        <image name="bg.png" width="2208" height="1242"/>
+        <image name="buttons.png" width="756" height="299"/>
+        <image name="logo.png" width="1000" height="299"/>
+    </resources>
 </document>
